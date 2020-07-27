@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: indigo;
+        margin: 0px;
+        padding: 0px;
+                height: 900px;
+        background: url('event1.jpg')  no-repeat  center  fixed;     
+        background-size: cover;
+        background-repeat:no-repeat
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        color: indigo;
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 38%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .navbar {
+
+        background-color: hotpink;
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(36, 226, 226);
+    }
+
+    .con1 video {
+        margin: 0px auto;
+        width: 114%;
+        height: 276px;
+        left: 100px;
+        
+    }
+
+
+    .con1 {
+        display: inline-block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: -48px;
+        top: 264px;
+        height: 276px;
+    }
+
+    .con2 {
+        display: block;
+        width: 350px;
+        padding: 15px;
+        margin: 0px auto;
+        position: absolute;
+        text-align: center;
+        color: red;
+        top: 264px;
+        left: 43%;
+        right: 50%;
+        /*border: 2px solid green;*/
+        background-color: rgb(135, 227, 243);
+    }
+
+    .con3 {
+        position: absolute;
+        right: 60px;
+        top: 264px;
+        display: inline-block;
+        /*border: 2px solid yellow;*/
+    }
+
+    .con3 img {
+        width: 343px;
+        height: 270px;
+        filter: invert(0%);
+    }
+
+    .p {
+        align-content: center;
+    }
+
+    .cont1 {
+        display: inline-block;
+        position: absolute;
+        left: -48px;
+        top: 575px;
+        height: 276px;
+    }
+
+    .cont2 {
+        display: block;
+        width: 350px;
+        padding: 15px;
+        margin: 0px auto;
+        position: absolute;
+        top: 575px;
+        left: 43%;
+        right: 50%;
+        
+    }
+
+    .cont3 {
+        position: absolute;
+        right: 60px;
+        top: 575px;
+        display: inline-block;
+    }
+    .cont3 img {
+        width: 343px;
+        height: 286px;
+        filter: invert(0%);
+    }
+    .cont1 video {
+        margin: 0px auto;
+        width: 64%;
+        height: 276px;
+        left: 100px;
+        
+    }
+
+ 
+</style>
+
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="star.jpg" alt="error">
+            <div>Star Events</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </div>
+    
+    </header>
+
+
+    <div class="con1">
+        <video src="VID2.MP4.mp4" autoplay class="video"></video>
+    </div>
+ 
+    <div class="con2">
+        <h2>Our some <br> sucessful <br> Event's</h2>
+    </div>
+
+    <div class="con3">
+        <img src="main2.jpg" alt="error">
+    </div>
+    <br>
+    <section>
+
+        <div class="cont1">
+            <video src="VID1.MP4.mp4" autoplay class="video"></video>
+        </div>
+     
+        <div class="cont2">
+            <img src="main1.jpg" alt="">
+        </div>
+    
+        <div class="cont3">
+            <img src="main3.jpg" alt="error">
+        </div>
+    </section>
+
+</body>
+
+</html>

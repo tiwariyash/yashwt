@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: indigo;
+        margin: 0px;
+        padding: 0px;
+        height: 4444px;
+        background: url('bak.jpg')  no-repeat  center  fixed;     
+        background-size: cover;
+        background-repeat:no-repeat
+        }
+  
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        color: indigo;
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 38%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .navbar {
+
+        background-color: hotpink;
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(36, 226, 226);
+    }
+
+    .container {
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        height: 700px;
+        border-radius: 28px;
+    }
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    .container date{
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 151px auto;
+        font-size: 25px;
+        border-radius: 8px;
+
+    }
+    #myform{
+        top: 1000px;
+    }
+</style>
+
+<body onload="load()">
+    
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="star.jpg" alt="error">
+            <div>Star Events</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container" id="myform">
+        <h1>Have your best time with  <br> Star Events</h1>
+        <form>
+            <label for="name">Name </label>
+            <div class="form-group">
+                <input type="text" id="name" name="" placeholder="Enter your Name">
+            </div>
+            <label for="locality">Locality </label>
+            <div class="form-group">
+                <input type="text" id="locality" name="" placeholder="Enter your Locality">
+            </div>
+            <label for="email">Email </label>
+            <div class="form-group">
+                <input type="email" id="email" name="" placeholder="Enter your Email Id">
+            </div>
+            <label for="no">Contact no </label>
+            <div class="form-group">
+                <input type="text" id="contactus" placeholder="Enter mobile no">
+            </div><br>
+
+            <label for="date">Date of your event </label>
+            <div class="form-group">
+                <input type="date" id="date" id="date">
+            </div><br>
+            <label for="number"> No of people attending your event </label>
+            <div class="form-group">
+               <input type="number" id="number">
+            </div><br>
+            <label for="sur">Did you want it as surprice party:</label>
+            <div class="date">
+                Yes<input type="radio" name="sur" id="sur">No<input type="radio" name="sur" checked id="sur"> 
+            </div><br>
+            <div>
+            <label for="event">Event </label>
+            <select name="event" id="event" class="form-group">
+                <option value="mar">Marriage</option>
+                <option value="bir">Birthday</option>
+                <option value="Dj">Dj Night</option>
+                <option value="Conf">Conference</option>
+                <option value="oth">Other</option>
+            </select>            
+            </div><br>
+            <label for="Explain">Explain something about event</label>
+            <div class="form-group">
+                <textarea name="text" id="info" cols="30" rows="5" id="Explain"></textarea> 
+            </div><br>
+            <input type="button" id="add" value="Submit" onclick="Javascript:addRow()"></td>
+        </form>
+            <div id="mydata">
+            <b>Current data in the system ...</b>
+            <table id="myTableData"  border="1" cellpadding="2">
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><b>Name</b></td>
+                    <td><b>Locality</b></td>
+                    <td><b>Email</b></td>
+                    <td><b>Contact no</b></td>
+                    <td><b>Date</b></td>
+                    <td><b>Attendes no</b></td>
+                    <td><b>Event</b></td>
+                    <td><b>Details</b></td>
+                </tr>
+            </table>
+            &nbsp;
+             
+            </div>
+    </div>
+</body>
+</html>
